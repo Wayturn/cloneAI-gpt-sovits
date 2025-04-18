@@ -25,3 +25,5 @@ pip install -r requirements.txt
 ## 參考來源
 - [GPT-SoVITS v3](https://github.com/innnky/gpt-sovits)
 - [faster-whisper](https://github.com/SYSTRAN/faster-whisper)
+
+# cloneAI-gpt-sovits
