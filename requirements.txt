@@ -1,0 +1,9 @@
+gradio>=3.50.2
+faster-whisper>=0.10.0
+torch>=2.0.0
+soundfile
+numpy
+scipy
+ffmpeg-python
+# 下列依賴視 gpt-sovits 推理腳本需求增減
+pydub
