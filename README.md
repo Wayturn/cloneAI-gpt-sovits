@@ -23,7 +23,7 @@ pip install -r requirements.txt
 - 若需模型檔案，請依 Hugging Face 或官方 repo 指示下載
 
 ## 參考來源
-- [GPT-SoVITS v3](https://github.com/innnky/gpt-sovits)
+- [GPT-SoVITS v3](https://github.com/RVC-Boss/GPT-SoVITS)
 - [faster-whisper](https://github.com/SYSTRAN/faster-whisper)
 
 # cloneAI-gpt-sovits
