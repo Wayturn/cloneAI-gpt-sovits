@@ -1,20 +1,21 @@
 {
-    "filter_length": 1024,
-    "segment_size": 8192,
-    "hop_length": 256,
-    "upsample_rates": [
-        8,
-        8,
-        2,
-        2
-    ],
-    "upsample_kernel_sizes": [
-        16,
-        16,
-        4,
-        4
-    ],
-    "upsample_initial_channel": 512,
+    "spec_channels": 128,
+    "filter_length": 2048,
+    "hop_length": 640,
+    "win_length": 2048,
+    "sampling_rate": 32000,
+    "n_mel_channels": 128,
+    "mel_fmin": 0.0,
+    "mel_fmax": null,
+    "segment_size": 20480,
+    "inter_channels": 192,
+    "hidden_channels": 192,
+    "filter_channels": 768,
+    "n_heads": 2,
+    "n_layers": 6,
+    "kernel_size": 3,
+    "p_dropout": 0.1,
+    "resblock": "1",
     "resblock_kernel_sizes": [
         3,
         7,
@@ -37,8 +38,24 @@
             5
         ]
     ],
-    "n_speakers": 1,
-    "gin_channels": 0,
-    "use_sdp": false,
-    "emotion_embedding": false
+    "upsample_rates": [
+        10,
+        8,
+        2,
+        2,
+        2
+    ],
+    "upsample_initial_channel": 512,
+    "upsample_kernel_sizes": [
+        16,
+        16,
+        8,
+        2,
+        2
+    ],
+    "n_layers_q": 3,
+    "use_spectral_norm": false,
+    "gin_channels": 512,
+    "semantic_frame_rate": "25hz",
+    "freeze_quantizer": true
 }
