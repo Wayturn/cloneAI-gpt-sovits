@@ -39,17 +39,19 @@
 ```bash
 .
 ├── app.py                 # 入口程式，啟動 Gradio / Web 介面
+├── config.py              # [新增] 專案設定檔 (路徑、參數)
 ├── requirements.txt       # 套件需求
 ├── space.yaml             # Hugging Face Spaces 設定
+├── core/                  # [新增] 核心推理邏輯
+│   └── inference.py       # InferenceEngine 類別
 ├── gpt_sovits/
 │   ├── module/            # GPT-SoVITS 相關模組
-│   ├── pretrain_models/   # 預訓練模型放置位置（需自行下載）
+│   ├── pretrained_models/ # 預訓練模型放置位置
 │   ├── text/              # 文本處理相關工具
 │   ├── f5_tts/            # F5 TTS / vocoder 等模型
-│   ├── sovits.py          # SoVITS 推理主程式
-│   └── inference_webui.py # 原版 WebUI 推理流程（部分邏輯沿用）
+│   └── sovits.py          # SoVITS 模型載入邏輯
 └── utils/
-    └── whisper_utils.py   # 工具函式（路徑處理、音訊工具等）
+    └── whisper_utils.py   # 工具函式（語音辨識）
 ```
 
 ---
@@ -141,7 +143,7 @@ Running on http://127.0.0.1:7860
 - 推理策略（如 top_k, top_p, temperature）
 - 語音切片設定（長句分段合成）
 
-可以在 `gpt_sovits/sovits.py` 或 `inference_webui.py` 裡調整預設參數。
+可以在 `config.py` 裡調整路徑與全域設定，或在 `core/inference.py` 調整推理參數。
 
 ---
 

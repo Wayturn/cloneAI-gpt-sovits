@@ -5,5 +5,10 @@ soundfile
 numpy
 scipy
 ffmpeg-python
-# 下列依賴視 gpt-sovits 推理腳本需求增減
+librosa
+transformers
 pydub
+einops
+x_transformers
+torchaudio
+tqdm
